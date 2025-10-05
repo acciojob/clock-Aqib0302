@@ -1,4 +1,4 @@
-let el  = document.querySelector("p");
+let element = document.querySelector("#timer");
 
 setInterval(()=>{
 	let d=new Date();
@@ -15,5 +15,5 @@ let year=d.getFullYear();
 	else{
 		AM2PM="AM";
 	}
-	el.innerHTML=`<h2> ${date}/${month}/${year}</h2>,${hour}:${minutes}:${seconds} ${AM2PM}`;
+	element.innerHTML=` ${date}/${month}/${year}, ${hour}:${minutes}:${seconds} ${AM2PM}`;
 },1000);
